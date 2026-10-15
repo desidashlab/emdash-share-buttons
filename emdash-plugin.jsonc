@@ -1,0 +1,41 @@
+{
+	"$schema": "./node_modules/@emdash-cms/plugin-cli/schemas/emdash-plugin.schema.json",
+
+	"slug": "share-buttons",
+	"publisher": "did:plc:vvm75pgx6ihqfuil7y5awyge",
+
+	"name": "Share Buttons",
+	"description": "Share buttons on every post: X, Facebook, LinkedIn, WhatsApp, Bluesky, Telegram and more, plus copy link and the phone share sheet.",
+	"keywords": ["share buttons", "social share", "social media", "share", "copy link"],
+
+	"license": "MIT",
+	"author": { "name": "DesiDash Lab" },
+	"security": { "email": "desidashlab@gmail.com" },
+	"repo": "https://github.com/desidashlab/emdash-share-buttons",
+
+	"release": {
+		"artifacts": {
+			"icon": { "file": "assets/icon.png" },
+			"banner": { "file": "assets/banner.png" },
+			"screenshots": [
+				{ "file": "assets/screenshot-site.jpg" },
+				{ "file": "assets/screenshot-buttons.jpg" },
+				{ "file": "assets/screenshot-setup.jpg" }
+			]
+		}
+	},
+
+	"sections": {
+		"installation": { "file": "docs/installation.md" },
+		"faq": { "file": "docs/faq.md" },
+		"changelog": { "file": "docs/changelog.md" }
+	},
+
+	// No access to your content or the outside world. The buttons are drawn in the visitor's browser from your settings.
+	"capabilities": [],
+	"allowedHosts": [],
+
+	"admin": {
+		"pages": [{ "path": "/overview", "label": "Share Buttons", "icon": "share" }]
+	}
+}
